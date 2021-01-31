@@ -1,0 +1,7 @@
+GET / api/films - recupera todas las películas
+POST /api/films - crea una película
+PUT / api/films/s - edita la película 4
+DELETE /api/films/4 - borra la película 4
+
+/api/users/login
+/api/users/registrer
