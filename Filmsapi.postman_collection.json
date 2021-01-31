@@ -1,0 +1,106 @@
+{
+	"info": {
+		"_postman_id": "83868bf5-c171-4180-b5b9-27f6d5e8518a",
+		"name": "Filmsapi",
+		"description": "Api de peliculas realizada con node.js, express, mysql, jwt, sequelize, moment.js, bcrypt",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "login",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/films",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "user-token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c3VhcmlvSWQiOjIsImNyZWF0ZWRBdCI6MTYxMTk4MTExMSwiZXhwaXJhdGVkQXQiOjE2MTE5ODE0MTF9.MkEjY6Uhl_QLuRB6JSBfNL7W17FPju69jwkZ1BbEkPg",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/api/films",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"films"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/users/login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "user-token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c3VhcmlvSWQiOjIsImNyZWF0ZWRBdCI6MTYxMTk3OTk5NywiZXhwaXJhdGVkQXQiOjE2MTE5ODAyOTd9.TsqI1wRAW2E0WYR5O5o-t7WFlsuSmaiSkoMLUpxskt4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "Manuel",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "Manuel@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345",
+							"type": "text"
+						},
+						{
+							"key": "director",
+							"value": "Almodovar",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "filmid",
+							"value": "1",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/users/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"users",
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
